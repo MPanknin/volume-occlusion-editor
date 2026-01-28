@@ -1,0 +1,125 @@
+name: Build
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-linux:
+    name: Linux Build
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        build_type: [Release, Debug]
+        include_cuda: [ON, OFF]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          build-essential \
+          cmake \
+          libwxgtk3.0-gtk3-dev \
+          libopenscenegraph-dev \
+          libgl1-mesa-dev
+
+    - name: Install CUDA Toolkit
+      if: matrix.include_cuda == 'ON'
+      uses: Jimver/cuda-toolkit@v0.2.14
+      with:
+        cuda: '12.3.0'
+
+    - name: Configure CMake
+      run: |
+        cmake -B build \
+          -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} \
+          -DBUILD_CUDA=${{ matrix.include_cuda }} \
+          -DBUILD_VIEWER=ON \
+          -DBUILD_CLI=ON
+
+    - name: Build
+      run: cmake --build build --config ${{ matrix.build_type }} -j$(nproc)
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: linux-${{ matrix.build_type }}-cuda-${{ matrix.include_cuda }}
+        path: build/bin/
+
+  build-macos:
+    name: macOS Build
+    runs-on: macos-14
+    strategy:
+      matrix:
+        build_type: [Release, Debug]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Dependencies
+      run: |
+        brew install cmake wxwidgets open-scene-graph
+
+    - name: Configure CMake
+      run: |
+        cmake -B build \
+          -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} \
+          -DBUILD_CUDA=OFF \
+          -DBUILD_VIEWER=ON \
+          -DBUILD_CLI=OFF
+
+    - name: Build
+      run: cmake --build build --config ${{ matrix.build_type }} -j$(sysctl -n hw.ncpu)
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: macos-${{ matrix.build_type }}
+        path: build/bin/
+
+  build-windows:
+    name: Windows Build
+    runs-on: windows-2022
+    strategy:
+      matrix:
+        build_type: [Release, Debug]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup vcpkg
+      uses: lukka/run-vcpkg@v11
+      with:
+        vcpkgGitCommitId: 'master'
+
+    - name: Install Dependencies
+      run: |
+        vcpkg install wxwidgets openscenegraph --triplet x64-windows
+
+    - name: Install CUDA Toolkit
+      uses: Jimver/cuda-toolkit@v0.2.14
+      with:
+        cuda: '12.3.0'
+
+    - name: Configure CMake
+      run: |
+        cmake -B build `
+          -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} `
+          -DCMAKE_TOOLCHAIN_FILE=$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake `
+          -DBUILD_CUDA=ON `
+          -DBUILD_VIEWER=ON `
+          -DBUILD_CLI=ON
+
+    - name: Build
+      run: cmake --build build --config ${{ matrix.build_type }}
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: windows-${{ matrix.build_type }}
+        path: build/bin/
