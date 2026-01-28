@@ -1,6 +1,6 @@
 //#include "VolumeManager.h"
-//#include "osg\Vec3f"
-//#include "osgDB\WriteFile"
+//#include "osg/Vec3f"
+//#include "osgDB/WriteFile"
 //
 //using namespace osg;
 //int main()

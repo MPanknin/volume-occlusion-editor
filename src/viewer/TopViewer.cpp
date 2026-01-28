@@ -9,6 +9,7 @@
 #include <osgGA/TrackballManipulator>
 #include <osgViewer/Viewer>
 #include <osgViewer/ViewerEventHandlers>
+#ifdef _WIN32
 #include <osgViewer/api/Win32/GraphicsWindowWin32>
 #include <osgVolume/Volume>
 
@@ -218,4 +219,3 @@ void VolumeViewer::setClearColor( osg::Vec4 color )
 osg::Image* VolumeViewer::getDepthImage()
 {
   return m_depthCamera->getDepthImage();
-}

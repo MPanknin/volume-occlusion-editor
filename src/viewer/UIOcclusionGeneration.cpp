@@ -2,11 +2,11 @@
 
 #include <sstream>
 
-#include <osg\ref_ptr>
-#include <osgDB\ReadFile>
-#include <osgDB\WriteFile>
+#include <osg/ref_ptr>
+#include <osgDB/ReadFile>
+#include <osgDB/WriteFile>
 
-#include <wx\dcclient.h>
+#include <wx/dcclient.h>
 
 #include "UIOcclusionGeneration.h"
 #include "UIControlPoint.h"

@@ -1,6 +1,6 @@
 #include "MappingCollection.h"
 
-#include "osg\TransferFunction"
+#include "osg/TransferFunction"
 
 //============================================================================
 MappingCollection::MappingCollection(int numBins) : m_numBins(numBins)

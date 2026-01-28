@@ -2,7 +2,7 @@
 
 #include "Logger.h"
 
-#include "osg\TransferFunction"
+#include "osg/TransferFunction"
 
 //============================================================================
 MappingBasic::MappingBasic(int numBins) : MappingCollection(numBins)

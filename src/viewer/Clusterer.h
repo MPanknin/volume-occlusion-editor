@@ -38,7 +38,7 @@ Axis aligned bounding box
 class BoundingBox{
 	//----------CONSTRUCTORS UND DESTURCTOR------------
 	public:
-		BoundingBox(Point2D &min, Point2D &max);
+		BoundingBox(const Point2D &min, const Point2D &max);
 		~BoundingBox(void);
 
 	//----------MEMBER VARIABLES-----------------------

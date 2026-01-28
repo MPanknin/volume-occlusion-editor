@@ -1,11 +1,11 @@
 //#include <vector>
 //#include <map>
 //
-//#include "osgDB\WriteFile"
+//#include "osgDB/WriteFile"
 //
-//#include "osg\Image"
-//#include "osg\TransferFunction"
-//#include "osg\Vec4"
+//#include "osg/Image"
+//#include "osg/TransferFunction"
+//#include "osg/Vec4"
 //
 //using namespace std;
 //using namespace osg;

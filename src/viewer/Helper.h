@@ -1,8 +1,8 @@
 #ifndef Helper_h__
 #define Helper_h__
 
-#include <osg\PolygonMode>
-#include <osg\Vec3>
+#include <osg/PolygonMode>
+#include <osg/Vec3>
 
 namespace osg
 {

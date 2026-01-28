@@ -1,13 +1,13 @@
-#include <osg\StateSet>
-#include <osg\Node>
-#include <osg\Image>
+#include <osg/StateSet>
+#include <osg/Node>
+#include <osg/Image>
 
-#include "osgDB\Output"
-#include "osgDB\WriteFile"
+#include "osgDB/Output"
+#include "osgDB/WriteFile"
 
 #include "Helper.h"
 #include "Logger.h"
-#include "osg\Vec2"
+#include "osg/Vec2"
 #include "HistogramCollection.h"
 #include <assert.h>
 
@@ -539,8 +539,8 @@ long int Helper::GetFileSize( const char* path )
   long int size = 0;
   if(file)
   {
-    _fseeki64(file, 0, SEEK_END);
-    size = _ftelli64(file);
+    fseek(file, 0, SEEK_END);
+    size = ftell(file);
     fclose(file);
   }
   else

@@ -1,11 +1,11 @@
 #ifndef VoxelSlice_h__
 #define VoxelSlice_h__
 
-#include "osgText\Text"
+#include "osgText/Text"
 
-#include "osg\Array"
-#include "osg\Matrix"
-#include "osg\Vec3"
+#include "osg/Array"
+#include "osg/Matrix"
+#include "osg/Vec3"
 
 namespace osg
 {

@@ -15,6 +15,12 @@ file(GLOB VIEWER_SOURCES
     "*.cpp"
     "*.h")
 
+# Exclude files that require optional dependencies or are orphaned
+list(REMOVE_ITEM VIEWER_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/LocalhistTest.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/RawLoader.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/SegyLoader.cpp")
+
 # Create viewer executable
 add_executable(occlusion-viewer ${VIEWER_SOURCES})
 

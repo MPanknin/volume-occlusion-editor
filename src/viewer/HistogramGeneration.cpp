@@ -1,10 +1,10 @@
 //#include <iosfwd>
 //
-//#include "osg\ArgumentParser"
-//#include "osg\TransferFunction"
+//#include "osg/ArgumentParser"
+//#include "osg/TransferFunction"
 //
-//#include "osgDB\WriteFile"
-//#include "osgDB\ReadFile"
+//#include "osgDB/WriteFile"
+//#include "osgDB/ReadFile"
 //
 //#include "ApplicationPaths.h"
 //#include "Helper.h"

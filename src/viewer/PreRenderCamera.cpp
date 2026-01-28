@@ -1,5 +1,5 @@
-#include "osg\Camera"
-#include "osg\Image"
+#include "osg/Camera"
+#include "osg/Image"
 
 #include "PreRenderCamera.h"
 #include "RenderCallbacks.h"

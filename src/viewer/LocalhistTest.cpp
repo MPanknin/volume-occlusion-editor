@@ -8,9 +8,9 @@
 #include "IL/il.h"
 #include "IL/ilu.h"
 
-#include "osg\ArgumentParser"
-#include "osg\TransferFunction"
-#include "osgDB\WriteFile"
+#include "osg/ArgumentParser"
+#include "osg/TransferFunction"
+#include "osgDB/WriteFile"
 
 #include "ApplicationPaths.h"
 #include "Helper.h"

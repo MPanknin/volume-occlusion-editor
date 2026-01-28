@@ -1,26 +1,26 @@
-#include <osgDB\ReadFile>
+#include <osgDB/ReadFile>
 
-#include <osgUtil\IntersectionVisitor>
+#include <osgUtil/IntersectionVisitor>
 
-#include <osgVolume\Locator>
-#include <osgVolume\VolumeTechnique>
-#include <osgVolume\VolumeTile>
+#include <osgVolume/Locator>
+#include <osgVolume/VolumeTechnique>
+#include <osgVolume/VolumeTile>
 
-#include <osg\Array>
-#include <osg\Geode>
-#include <osg\Geometry>
-#include <osg\MatrixTransform>
-#include <osg\PolygonMode>
-#include <osg\PrimitiveSet>
-#include <osg\Shader>
-#include <osg\StateSet>
-#include <osg\TexGen>
-#include <osg\Texture2D>
-#include <osg\Texture3D>
-#include <osg\Texture>
-#include <osg\Uniform>
-#include <osg\Vec3d>
-#include <osg\ref_ptr>
+#include <osg/Array>
+#include <osg/Geode>
+#include <osg/Geometry>
+#include <osg/MatrixTransform>
+#include <osg/PolygonMode>
+#include <osg/PrimitiveSet>
+#include <osg/Shader>
+#include <osg/StateSet>
+#include <osg/TexGen>
+#include <osg/Texture2D>
+#include <osg/Texture3D>
+#include <osg/Texture>
+#include <osg/Uniform>
+#include <osg/Vec3d>
+#include <osg/ref_ptr>
 
 #include "Helper.h"
 #include "Logger.h"

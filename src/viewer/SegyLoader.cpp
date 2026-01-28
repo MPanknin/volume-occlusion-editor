@@ -1,6 +1,6 @@
 #include <assert.h>
 
-#include <osg\Image>
+#include <osg/Image>
 
 #include "SegyLoader.h"
 #include "Logger.h"

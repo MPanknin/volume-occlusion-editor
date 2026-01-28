@@ -1,6 +1,7 @@
 #pragma warning( disable : 4100 )
 
-#include <wx\msw\dcclient.h>
+#ifdef _WIN32
+#include <wx/msw/dcclient.h>
 
 #include "UIPolyPoint.h"
 #include "UIOcclusionSpectrum.h"
@@ -77,4 +78,3 @@ void UIPolyPoint::OnMotion( wxMouseEvent& event )
 void UIPolyPoint::OnRightUp( wxMouseEvent& event )
 {
 }
-

@@ -1,5 +1,5 @@
-#include "osgDB\WriteFile"
-#include "osg\Camera"
+#include "osgDB/WriteFile"
+#include "osg/Camera"
 
 #include "RayCastTechnique.h"
 #include "RenderCallbacks.h"

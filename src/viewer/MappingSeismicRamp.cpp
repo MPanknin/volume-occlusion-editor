@@ -1,6 +1,6 @@
 #include "MappingSeismicRamp.h"
 
-#include "osg\TransferFunction"
+#include "osg/TransferFunction"
 
 #include "Logger.h"
 

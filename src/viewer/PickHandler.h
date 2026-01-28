@@ -1,7 +1,7 @@
 #ifndef PickHandler_h__
 #define PickHandler_h__
 
-#include <osgGA\GUIEventHandler>
+#include <osgGA/GUIEventHandler>
 
 #include "VoxelSlice.h"
 

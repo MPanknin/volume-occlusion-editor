@@ -4,8 +4,8 @@
 #include <fstream>
 #include <string>
 
-#include "osg\TransferFunction"
-#include "osgDB\WriteFile"
+#include "osg/TransferFunction"
+#include "osgDB/WriteFile"
 
 #include "ApplicationPaths.h"
 #include "Logger.h"

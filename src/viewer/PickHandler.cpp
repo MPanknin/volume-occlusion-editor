@@ -1,12 +1,12 @@
-#include <osgUtil\LineSegmentIntersector>
+#include <osgUtil/LineSegmentIntersector>
 
-#include <osgViewer\Viewer>
+#include <osgViewer/Viewer>
 
-#include <osg\Group>
-#include <osg\PositionAttitudeTransform>
-#include <osg\Shape>
-#include <osg\ShapeDrawable>
-#include <osg\ref_ptr>
+#include <osg/Group>
+#include <osg/PositionAttitudeTransform>
+#include <osg/Shape>
+#include <osg/ShapeDrawable>
+#include <osg/ref_ptr>
 
 #include "PickHandler.h"
 #include "Logger.h"

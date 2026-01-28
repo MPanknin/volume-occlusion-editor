@@ -1,6 +1,7 @@
 #include <osg/ref_ptr>
 #include <osgDB/ReadFile>
 #include <osgDB/WriteFile>
+#ifdef _WIN32
 #include <osgViewer/api/Win32/GraphicsWindowWin32>
 
 #include <wx/filename.h>
@@ -231,4 +232,3 @@ void UIContainer::OnMenu( wxCommandEvent& event )
   }
 
   FE();
-}

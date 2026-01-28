@@ -4,9 +4,10 @@
 
 #include <osg/ref_ptr>
 #include <osgDB/ReadFile>
-#include <osg\TransferFunction>
+#include <osg/TransferFunction>
 
-#include <wx\msw\dcclient.h>
+#ifdef _WIN32
+#include <wx/msw/dcclient.h>
 
 #include "UIColorTable.h"
 #include "UIContainer.h"
@@ -218,4 +219,3 @@ void UIColorTable::OnRightDown( wxMouseEvent& event )
 void UIColorTable::OnRightUp( wxMouseEvent& event )
 {
   // TODO: Implement OnRightUp
-}

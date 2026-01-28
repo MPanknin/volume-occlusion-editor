@@ -3,8 +3,8 @@
 //#include <string>
 //#include <vector>
 //#include "Helper.h"
-//#include "osg\Image"
-//#include "osgDB\WriteFile"
+//#include "osg/Image"
+//#include "osgDB/WriteFile"
 //#include <math.h>
 //
 //void main()

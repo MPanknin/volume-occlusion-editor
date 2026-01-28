@@ -1,7 +1,7 @@
 #ifndef KeyHandler_h__
 #define KeyHandler_h__
 
-#include "osgGA\GUIEventHandler"
+#include "osgGA/GUIEventHandler"
 
 #include "RayCastTechnique.h"
 #include "VolumeViewer.h"

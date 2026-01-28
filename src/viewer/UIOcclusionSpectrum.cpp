@@ -2,7 +2,7 @@
 
 #include <osg/ref_ptr>
 
-#include <wx\dcclient.h>
+#include <wx/dcclient.h>
 
 #include "UIOcclusionSpectrum.h"
 #include "UIPolyPoint.h"

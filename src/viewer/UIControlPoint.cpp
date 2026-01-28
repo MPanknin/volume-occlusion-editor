@@ -1,6 +1,7 @@
 #pragma warning( disable : 4100 )
 
-#include <wx\msw\dcclient.h>
+#ifdef _WIN32
+#include <wx/msw/dcclient.h>
 
 #include "UIControlPoint.h"
 #include "UIControlPointInterface.h"
@@ -71,3 +72,4 @@ void UIControlPoint::OnRightUp( wxMouseEvent& event )
   m_parent->RemoveControlPoint(this);  	
   this->Destroy();
 }
+#endif

@@ -1,6 +1,6 @@
-#include <osgDB\WriteFile>
+#include <osgDB/WriteFile>
 
-#include <wx\dcclient.h>
+#include <wx/dcclient.h>
 
 #include "UISegY.h"
 #include "UIContainer.h"

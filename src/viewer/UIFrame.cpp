@@ -1,6 +1,7 @@
 #include "UIFrame.h"
 #include "VolumeManager.h"
-#include "wx\msw\dcclient.h"
+#ifdef _WIN32
+#include <wx/msw/dcclient.h"
 
 bool UIFrame::m_dirty = false;
 
@@ -240,4 +241,3 @@ void UIFrame::RemoveControlPoint(UIControlPoint* point)
   m_points.erase(point);
   m_bmpPreviewOpacity->RemoveChild(point);
   m_dirty = true;
-}

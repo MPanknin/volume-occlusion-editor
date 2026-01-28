@@ -2,11 +2,11 @@
 #include "UIExtractor.h"
 #include <sstream>
 #include <set>
-#include "wx\dcclient.h"
+#include "wx/dcclient.h"
 #include <iostream>
 #include <fstream>
-#include <osgDB\ReadFile>
-#include <osgDB\ObjectWrapper>
+#include <osgDB/ReadFile>
+#include <osgDB/ObjectWrapper>
 #include "VolumeManager.h"
 
 bool UIExtractor::m_dirty = true;

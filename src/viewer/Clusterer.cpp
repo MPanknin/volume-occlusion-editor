@@ -64,9 +64,9 @@ Point2D& Point2D::operator=(const Point2D& rhs){
 //------------------------------------------------------------------------------------------------------------
 
 
-BoundingBox::BoundingBox(Point2D &min, Point2D &max) : mMin(min), mMax(max)
+BoundingBox::BoundingBox(const Point2D &min, const Point2D &max) : mMin(min), mMax(max)
 {
-	
+
 }
 
 

@@ -1,6 +1,7 @@
 #include "UIFrameOccGen.h"
 #include "VolumeManager.h"
-#include "wx\msw\dcclient.h"
+#ifdef _WIN32
+#include <wx/msw/dcclient.h"
 
 bool g_redraw = false;
 
@@ -334,4 +335,3 @@ void UIFrameOccGen::draw(wxWindow* win)
 void UIFrameOccGen::RefreshControlPoint(UIPolyPoint* point)
 {
   g_redraw = true;
-}

@@ -1,7 +1,7 @@
 #ifndef VolumeInfo_h__
 #define VolumeInfo_h__
 
-#include "osg\Referenced"
+#include "osg/Referenced"
 
 class ConfigFile;
 
