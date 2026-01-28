@@ -6,9 +6,12 @@ GPU-accelerated volumetric occlusion-based classification for seismic and scient
 [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![CUDA](https://img.shields.io/badge/CUDA-11%2B-76B900.svg)](https://developer.nvidia.com/cuda-toolkit)
 
+> **Developed as part of the [VRGEO Consortium](http://www.vrgeo.org/) at [Fraunhofer IAIS](https://www.iais.fraunhofer.de/)**
+> Research on advanced visualization techniques for geoscientific 3D volume data
+
 ## Overview
 
-This project implements a novel approach to volumetric data classification using GPU-accelerated occlusion generation. Originally developed as part of an MSc thesis (2012), it has been modernized to use contemporary build systems and coding practices while maintaining the core research contributions.
+This project implements a novel approach to volumetric data classification using GPU-accelerated occlusion generation. Originally developed as part of an MSc thesis (2012) within the VRGEO consortium at Fraunhofer IAIS, it has been modernized to use contemporary build systems and coding practices while maintaining the core research contributions.
 
 ### Key Features
 
@@ -261,12 +264,13 @@ Typical performance on modern hardware (RTX 3080, 512³ volume):
 
 ## Research Background
 
-This project originated from MSc thesis research on occlusion-based classification for seismic interpretation. The core contribution is using local visibility as a feature to distinguish geological structures.
+This project originated from MSc thesis research on occlusion-based classification for seismic interpretation, conducted within the **VRGEO consortium** at **Fraunhofer IAIS** (Institute for Intelligent Analysis and Information Systems). The core contribution is using local visibility as a feature to distinguish geological structures.
 
-**Original Thesis (2012):**
-- University: [Your University]
-- Thesis: "Occlusion-Based Classification for Volumetric Data"
-- Advisor: [Advisor Name]
+**Original Development (2012):**
+- **Institution**: Fraunhofer IAIS, Sankt Augustin, Germany
+- **Project**: VRGEO - Virtual Reality for Geosciences
+- **Thesis**: "Occlusion-Based Classification for Volumetric Data"
+- **Focus**: Advanced visualization for seismic interpretation and geoscientific data analysis
 
 **Modernization (2026):**
 - Migrated from Visual Studio 2010 to CMake
@@ -303,7 +307,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Original thesis project supervised by [Advisor Name]
+This work was conducted as part of the **VRGEO consortium** (Virtual Reality for Geosciences) at **Fraunhofer IAIS** (Institute for Intelligent Analysis and Information Systems), Sankt Augustin, Germany.
+
+Special thanks to:
+- **VRGEO consortium partners** for project support and collaboration
+- **Fraunhofer IAIS** for providing research infrastructure and guidance
 - OpenSceneGraph community for excellent 3D graphics framework
 - NVIDIA CUDA team for GPU computing platform
 - wxWidgets project for cross-platform GUI toolkit
@@ -313,20 +321,19 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you use this software in academic work, please cite:
 
 ```bibtex
-@mastersthesis{yourname2012occlusion,
+@mastersthesis{panknin2012occlusion,
   title={Occlusion-Based Classification for Volumetric Data},
-  author={Your Name},
+  author={Martin Panknin},
   year={2012},
-  school={Your University}
+  school={Fraunhofer IAIS},
+  note={VRGEO Consortium - Virtual Reality for Geosciences}
 }
 ```
 
 ## Contact
 
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your Profile]
-- **Portfolio**: [Your Website]
+- **Author**: Martin Panknin
+- **GitHub**: [@MPanknin](https://github.com/MPanknin)
 
 ---
 
