@@ -22,6 +22,7 @@ This project implements a novel approach to volumetric data classification using
 - **K-Means Clustering** - Automated feature classification
 - **Cross-Platform** - Builds on Linux, macOS, and Windows
 
+
 ## Applications
 
 - **Seismic Interpretation** - Analyze 3D seismic survey data
@@ -30,7 +31,8 @@ This project implements a novel approach to volumetric data classification using
 
 ## Screenshots
 
-*TODO: Add screenshots of the viewer, occlusion generation, and transfer function editor*
+<img width="1245" height="430" alt="SCR-20260131-ngkn" src="https://github.com/user-attachments/assets/9722c497-04f6-4431-870f-61625b17d0a8" />
+<img width="1246" height="803" alt="SCR-20260131-ngho" src="https://github.com/user-attachments/assets/76dae45c-653a-4d57-9103-e1bcc8645c11" />
 
 ## Technical Highlights
 
@@ -338,3 +340,4 @@ If you use this software in academic work, please cite:
 ---
 
 **Built with** ❤️ **and CUDA**
+
